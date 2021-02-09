@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="dev.leonardom.mlmodel1.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/modelOneFragment"
+        android:name="dev.leonardom.mlmodel1.ModelOneFragment"
+        android:label="Modelo 1"
+        tools:layout="@layout/fragment_model_one" />
+
+    <fragment
+        android:id="@+id/modelTwoFragment"
+        android:name="dev.leonardom.mlmodel1.ModelTwoFragment"
+        android:label="Modelo 2"
+        tools:layout="@layout/fragment_model_two" />
+
+</navigation>
