@@ -27,12 +27,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        try {
-            interpreter = Interpreter(loadModelFile(), null)
-        } catch(exception: Exception) {
-            Toast.makeText(this, "Error cargando modelo de ML", Toast.LENGTH_SHORT).show()
-            Toast.makeText(this, "Exception: $exception", Toast.LENGTH_SHORT).show()
-        }
+            try {
+                interpreter = Interpreter(loadModelFile(), null)
+            } catch(exception: Exception) {
+                Toast.makeText(this, "Error cargando modelo de ML", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Exception: $exception", Toast.LENGTH_SHORT).show()
+            }
 
         setupAutoCompleteTextView()
 
